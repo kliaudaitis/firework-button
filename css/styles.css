@@ -1,0 +1,101 @@
+@import "helper.css";
+
+.wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.button {
+	position: absolute;
+	z-index: 100;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 200px;
+	height: 60px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 50px;
+	background-color: #ff4081;
+	box-shadow: 0 15px 28px -4px rgba(255, 64, 129, .65);
+	-webkit-transition: box-shadow 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+	transition: box-shadow 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+	transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+	transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.button:hover {
+	box-shadow: 0 15px 20px 0 rgba(255, 64, 129, .65);
+	-webkit-transform: translate(0px, -2px) scale(1.02);
+	-ms-transform: translate(0px, -2px) scale(1.02);
+	transform: translate(0px, -2px) scale(1.02);
+	}
+
+	.button:active {
+	box-shadow: none;
+	-webkit-transform: scale(0.96) translate(0px, 5px);
+	-ms-transform: scale(0.96) translate(0px, 5px);
+	transform: scale(0.96) translate(0px, 5px);
+}
+
+.circle-full {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 32px;
+}
+
+.circle-full.purple {
+	background-color: #7c4dff;
+}
+
+.circle-full.cyan {
+	background-color: #18ffff;
+}
+
+.circle-full.pink {
+	background-color: #ff4081;
+}
+
+.circle-empty {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 20px;
+}
+
+.circle-empty.border-purple {
+	border-color: #7c4dff;
+}
+
+.circle-empty.border-cyan {
+	border-color: #18ffff;
+}
+
+.circle-empty.border-pink {
+	border-color: #ff4081;
+}
